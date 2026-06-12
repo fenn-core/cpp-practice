@@ -16,3 +16,15 @@ float Vec2::length() const {
 Vec2 Vec2::add(const Vec2& other) const {
     return Vec2(x + other.x, y + other.y);
 }
+
+Vec2 Vec2::subtract(const Vec2& other) const {
+    return Vec2(x - other.x , y - other.y);
+}
+
+Vec2 Vec2::scale(float scalar) const {
+    return Vec2(x * scalar , y * scalar);
+}
+
+float Vec2::dotproduct(const Vec2& other) const {
+    return (x * other.x + y * other.y);
+}
